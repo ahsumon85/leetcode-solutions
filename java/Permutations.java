@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Permutations {
-
 	public static void main(String[] args) {
 		int n;
 		Scanner sc = new Scanner(System.in);
@@ -14,17 +13,14 @@ public class Permutations {
 			System.out.print("3 1 4 2\n");
 		} else {
 			for (int i = 1; i <= n; i += 2) {
-				System.out.print(i);
-				System.out.print(" ");
+				System.out.print(i + " ");
 			}
 			for (int i = 2; i <= n; i += 2) {
 				System.out.print(i);
-				if (i < n - 1) {
+				if (i < n - 1)
 					System.out.print(" ");
-				} else {
+				else
 					System.out.print("\n");
-
-				}
 			}
 		}
 	}
